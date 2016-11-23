@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Procatinator</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="commentDiv" >
+                   <p id="comment">Hello!!Procastinator app welcomes you! Add tasks,
+                        complete them and you will earn levels every task your complete.In order to start adding
+                       button just click the round button.</p>
+
+                </div>
+                <div id="userDiv">
+
+                    <p id="nameUser" >Kate</p>
+
+                    <img id="userIcon" src="img/chelovechek.svg">
+                    <p id="levelUser" >Kate</p>
+                    <br/>
+                    <br/>
+                </div>
+
+
+            </div>
+
+            <div id="addTask">
+
+                <div  id="openFormButton" ></div>
+
+                <div id="inputForm" >
+                    <textarea id="inputDescr">Enter task description..</textarea>
+                    <br/>
+                    <label for="selectLevel">Select a level of importance for this task:</label>
+                    <select id="selectLevel">
+                        <option selected="selected">...</option>
+                        <option >1</option>
+                        <option >2</option>
+                        <option>3</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <button id="addTaskBtn">ADD</button>
+                    <button id="closeForm">Cancel</button>
+                    <br/>
+                    <br/>
+                </div>
+
+
+            </div>
+
+            <div id="tasks">
+                <ul id="tasksList">
+
+                </ul>
+            </div>
+        </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/app2.js"></script>
+    </body>
+</html>

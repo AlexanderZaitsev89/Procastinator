@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    background-color: #80c2dc;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#container{
+    padding-top:5vh ;
+    padding-left: 25vw;
+
+}
+.inLineBlock{
+    display: inline-block;
+}
+/*-------------------------------------------HEADER SECTION-----------------------------------------------------------*/
+#header{
+    color: #f9f9f9;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: #f16743;
+    height: 25vh;
+    width: 50vw;
+}
+#comment{
+    padding-left: 3vw;
+    padding-top: 3vh;
+    padding-right: 5vw;
+    color:  #494949;
+}
+#commentDiv{
+
+    float:left;
+    background: url("../img/okoshko2.svg") no-repeat;
+    background-size: cover;
+    height: 25vh;
+    width: 30vw;
+}
+#userDiv{
+    float:right;
+    height: 25vh;
+    width: 19vw;
+}
+#userIcon{
+    height: 19vh;
+    width: 10vw;
+}
+p{
+    -webkit-margin: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+#nameUser{
+    height: 3vh;
+}
+#levelUserUser{
+    height: 3vh;
+    margin: 0 0 0 0;
+}
+/*-------------------------------------------ADD TASK SECTION--------------------------------------------------------*/
+#addTask{
+
+    background-color: #c7bdbb;
+    width: 50vw;
+}
+#inputDescr{
+    width:35vw ;
+
+}
+#selectLevel{
+
+}
+#inputForm{
+    display: none;
+    padding-top: 2vh;
+    margin-left:2vw ;
+}
+#openFormButton{
+    display: block;
+    margin-left:22vw ;
+    background-image: url("../img/plyusik2.svg");
+    border-radius: 50%;
+
+
+    border:2px solid #ebebeb ;
+    width: 8vh ;
+    height: 8vh;
+}
+/*------------------------------------------- TASK LIST SECTION--------------------------------------------------------*/
+#tasks{
+    background-color: #ebad98;
+    height: 50vh;
+    width: 50vw;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.taskElement{
+    padding-left: 2vw;
+    color:  #494949;
+    border-top:2px solid #ebebeb ;
+    height: 5vh;
+    width: 48vw;
+    background-color:#ebad98;
+}
+.taskElementDropDown{
+    padding-left: 20vw;
+    color:  #494949;
+
+    height: 3vh;
+    width: 30vw;
+    background-color:#ebad98;
+}
+.buttonTaskElement{
+
+}
+
+
+
+
+
+
+
