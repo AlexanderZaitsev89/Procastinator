@@ -6,13 +6,12 @@ body {
 
     background-color: #80c2dc;
     font-family: 'Lato', sans-serif;
-
+    font-size:1em;
 }
 
 #container{
     padding-top:5vh ;
-    padding-left: 25vw;
-
+    padding-left: 30vw;
 }
 .inLineBlock{
     display: inline-block;
@@ -24,102 +23,193 @@ body {
     border-top-right-radius: 1em;
     background-color: #f16743;
     height: 25vh;
-    width: 50vw;
+    width: 40vw;
+}
+#inputSettingsForm{
+    display:none;
+    width: 50%;
+    height: 95%;
+    padding-top: 3%;
+    margin-left:5% ;
+}
+#inputUserName{
+    width: 90%;
+    height: 25%;
+}
+#selectGender{
+    width: 90%;
+    height: 25%;
+}
+#changeSettingsBtn{
+    margin-left: 30%;
+    float:left;
+    width: 10%;
+    height: 10%;
+    background: url("../img/ok-mark.svg") no-repeat;
+    background-size: contain;
+}
+#closeSettingsForm{
+    margin-left: 10%;
+    float:left;
+    width: 10%;
+    height: 10%;
+    background: url("../img/cancel2.svg") no-repeat;
 }
 #comment{
-    padding-left: 3vw;
-    padding-top: 3vh;
-    padding-right: 5vw;
+    background: url("../img/okoshko3.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 20%;
+    height: 100%;
+    width: 100%;
     color:  #494949;
 }
 #commentDiv{
-
     float:left;
-    background: url("../img/okoshko2.svg") no-repeat;
-    background-size: cover;
-    height: 25vh;
-    width: 30vw;
+    height: 100%;
+    width: 65%;
 }
 #userDiv{
     float:right;
-    height: 25vh;
-    width: 19vw;
+    height: 100%;
+    width: 35%;
 }
-#userIcon{
-    height: 19vh;
-    width: 10vw;
+#paragraphUserName{
+    margin-top: 2%;
+    float: left;
+    width:70%;
+    height: 10%;
 }
-p{
-    -webkit-margin: 0 0 0 0;
-    margin: 0 0 0 0;
+#dropDawnMenu{
+    margin-top: 2%;
+    float:left;
+    background: url("../img/settings.svg") no-repeat;
+    width: 10%;
+    height: 10%;
 }
-#nameUser{
-    height: 3vh;
+#iconUser{
+    height:75%;
+    width: 80%;
+}
+#iconUserLevel{
+    float:left;
+    height: 10%;
+    width: 10%;
+    margin-bottom:2% ;
+}
+
+#progressBarUserLevel{
+    float:left;
+    height: 10%;
+    width: 70%;
+
 }
 #levelUserUser{
-    height: 3vh;
-    margin: 0 0 0 0;
+    height: 10%;
+    width: 10%;
 }
+
 /*-------------------------------------------ADD TASK SECTION--------------------------------------------------------*/
 #addTask{
-
     background-color: #c7bdbb;
-    width: 50vw;
+    width: 40vw;
 }
 #inputDescr{
-    width:35vw ;
-
+    width:80% ;
+    height: 30%;
 }
 #selectLevel{
-
+    float:left;
+    width:30%;
+    height: 30%;
 }
 #inputForm{
+    width:80% ;
+    height:20vh;
     display: none;
-    padding-top: 2vh;
-    margin-left:2vw ;
+    padding-top: 2%;
+    margin-left:5% ;
 }
 #openFormButton{
     display: block;
-    margin-left:22vw ;
+    margin-left:45% ;
     background-image: url("../img/plyusik2.svg");
     border-radius: 50%;
-
-
     border:2px solid #ebebeb ;
     width: 8vh ;
     height: 8vh;
+}
+#addTaskBtn{
+    margin-left: 10%;
+    float:left;
+    width: 25%;
+    height: 25%;
+    background: url("../img/ok-mark.svg") no-repeat;
+    background-size: contain;
+}
+#closeForm{
+    margin-left: 2%;
+    float:left;
+    width: 25%;
+    height: 25%;
+    background: url("../img/cancel2.svg") no-repeat;
 }
 /*------------------------------------------- TASK LIST SECTION--------------------------------------------------------*/
 #tasks{
     background-color: #ebad98;
     height: 50vh;
-    width: 50vw;
+    width: 40vw;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
 .taskElement{
-    padding-left: 2vw;
+
+    padding-left: 2%;
+    padding-bottom: 1%;
     color:  #494949;
     border-top:2px solid #ebebeb ;
     height: 5vh;
-    width: 48vw;
+    width: 100%;
     background-color:#ebad98;
 }
 .taskElementDropDown{
-    padding-left: 20vw;
+    padding-bottom: 1%;
+    padding-left: 40%;
     color:  #494949;
-
     height: 3vh;
     width: 30vw;
     background-color:#ebad98;
+}
+.starsImage{
+    height: 5vh;
 }
 .buttonTaskElement{
 
 }
 
+/* @media Rules --------------------- */
 
-
-
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 500px) {
+        body{
+            font-size: 0.5em;
+        }
+}
+/* Tablets (portrait) ----------- */
+@media only screen and  (max-device-width : 1024px)
+and (orientation : portrait) {
+    #container{
+        padding-left: 12vw;
+    }
+    #header{
+        width: 75vw;
+        height:20vh;
+    }
+    #header,#addTask,#tasks{
+        width: 75vw;
+    }
+}
 
 
 

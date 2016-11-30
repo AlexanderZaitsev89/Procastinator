@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Procatinator</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
+<head>
+    <meta charset="utf-8">
+    <title>Procatinator</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3Lib.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    </head>
-    <body>
-        <div id="container">
-            <div id="header">
-                <div id="commentDiv" >
-                   <p id="comment">Hello!!Procastinator app welcomes you! Add tasks,
-                        complete them and you will earn levels every task your complete.In order to start adding
-                       button just click the round button.</p>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="commentDiv">
 
+            <div id="inputSettingsForm">
+                <textarea id="inputUserName" class="w3-input w3-border w3-round"
+                          placeholder="Enter your name."></textarea>
+                <br/>
+
+
+                <select id="selectGender" class="w3-select w3-border w3-round" name="option">
+                    <option value="0" selected>Select icon</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br/>
+                <br/>
+                <div id="changeSettingsBtn"></div>
+                <div id="closeSettingsForm"></div>
+                <br/>
+                <br/>
+            </div>
+            <p id="comment">Hello!!Procastinator app welcomes you! Add tasks,
+                complete them and you will earn levels for every task you complete.In order to start adding
+                task- just click the round button.</p>
+
+        </div>
+        <div id="userDiv">
+
+            <p id="paragraphUserName">Kate</p>
+
+            <div id="dropDawnMenu" class="w3-dropdown-hover">
+                <div class="w3-dropdown-content w3-border">
+                    <a id="settingsEdit">Edit</a>
+                    <a id="settingsDescription">Description</a>
                 </div>
-                <div id="userDiv">
-
-                    <p id="nameUser" >Kate</p>
-
-                    <img id="userIcon" src="img/chelovechek.svg">
-                    <p id="levelUser" >Kate</p>
-                    <br/>
-                    <br/>
-                </div>
-
-
             </div>
 
-            <div id="addTask">
+            <img id="iconUser" src="img/male.svg"><br/>
 
-                <div  id="openFormButton" ></div>
+            <img id="iconUserLevel" src="img/num1.jpg">
 
-                <div id="inputForm" >
-                    <textarea id="inputDescr">Enter task description..</textarea>
-                    <br/>
-                    <label for="selectLevel">Select a level of importance for this task:</label>
-                    <select id="selectLevel">
-                        <option selected="selected">...</option>
-                        <option >1</option>
-                        <option >2</option>
-                        <option>3</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <button id="addTaskBtn">ADD</button>
-                    <button id="closeForm">Cancel</button>
-                    <br/>
-                    <br/>
+            <div id="progressBarUserLevel" class="w3-progress-container">
+                <div id="myBar" class="w3-progressbar w3-green" style="width:1%">
+                    <div class="w3-center w3-text-white"></div>
                 </div>
-
-
             </div>
 
-            <div id="tasks">
-                <ul id="tasksList">
-
-                </ul>
-            </div>
         </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/app2.js"></script>
-    </body>
+    </div>
+
+    <div id="addTask">
+
+        <div id="openFormButton"></div>
+
+        <div id="inputForm">
+            <textarea id="inputDescr" class="w3-input w3-border w3-round"
+                      placeholder="Enter task description.."></textarea>
+            <br/>
+
+
+            <select id="selectLevel" class="w3-select w3-border w3-round" name="option">
+                <option value="..." selected>Level</option>
+                <option value="1">Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+            </select>
+
+            <div id="addTaskBtn"></div>
+            <div id="closeForm"></div>
+            <br/>
+            <br/>
+        </div>
+
+
+    </div>
+
+    <div id="tasks">
+        <ul id="tasksList">
+
+        </ul>
+    </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/app2.js"></script>
+</body>
 </html>
